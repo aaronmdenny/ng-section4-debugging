@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  servers;
+  /**
+   * "Cannot read property 'push' of undefined":
+   * Needed to initialize servers
+   */
+  servers = [];
 
   onAddServer() {
     this.servers.push('Another Server');
