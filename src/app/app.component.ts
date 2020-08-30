@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+/**
+ * Download the Angular Augury browser extension and view it in "Developer Tools" to view your Angular app in detail as
+ * it is running in the browser.
+ */
+
 export class AppComponent {
   /**
    * "Cannot read property 'push' of undefined":
@@ -33,8 +39,6 @@ export class AppComponent {
    * 
    * You can find your typescript files in Sources under:
    *  webpack:// -> . -> src -> app
-   * 
-   * 
    */
   onRemoveServer(id: number) {
     const position = id + 1;
